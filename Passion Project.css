@@ -1,0 +1,1671 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+a{
+    text-decoration-line: none;
+     /*OR*/
+     text-decoration: none;
+ }
+
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Banner.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    position:fixed;
+    color: #ffffff;
+    position: absolute;
+    top: 5;
+    left: 5;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 7px 8px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}   
+
+.nav-links ul li::after{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: #f8a6a2;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.About1{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.About1:hover{
+    border: 1px solid #bbd300;
+    background-color: #bbd300;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #de564d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav-link ul{
+        padding: 30px;
+    }
+}
+
+.nav-links ul{
+    padding: 20px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+}
+h2{
+    font-size: 33px;
+    font-weight: 550;
+    color: #000000;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+}
+h4{
+    font-size: 17px;
+    font-weight: 100;
+    color: #000000;
+    padding-top: 20px;
+    line-height: 1.5;
+    font-style: italic;
+}
+p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.collections{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    max-width: 80%;
+
+} 
+
+
+
+
+
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Flow\ \(Colors\ and\ Wonderland\).webp);
+    border-radius: 10px;
+  }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Reverie\ \(Colors\ and\ Wonderland\).webp);
+    border-radius: 10px;
+  }
+  .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Shine\ \(Colors\ and\ Wonderland\).png);
+    border-radius: 10px;
+  }
+  .overlay4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Space\ \(Colors\ and\ Wonderland\).webp);
+    border-radius: 10px;
+  }
+  .overlay5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url();
+    border-radius: 10px;
+  }
+  .overlay6 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Diving.webp);
+    border-radius: 10px;
+  }
+  .overlay7 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Blooming\ love.webp);
+    border-radius: 10px;
+  }
+  .overlay8 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Alice\ in\ my\ wonderland.webp);
+    border-radius: 10px;
+  }
+  .overlay9 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Eternity.webp);
+    border-radius: 10px;
+  }
+  .overlay10 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Little\ Wonderland.webp);
+    border-radius: 10px;
+  }
+  .overlay11 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Monets\ Chrysanthemums.webp);
+    border-radius: 10px;
+  }
+  .overlay12 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Halcyon.webp);
+    border-radius: 10px;
+  }
+  .overlay13 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/The\ unseen\ beauty.webp);
+    border-radius: 10px;
+  }
+  .overlay14 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Circles\ and\ Peones\ bnw.webp);
+    border-radius: 10px;
+  }
+  .overlay15 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Lillies\ bnw.webp);
+    border-radius: 10px;
+  }
+  .overlay16 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Dads\ Koi\ fishes\ bnw.webp);
+    border-radius: 10px;
+  }
+  .overlay17 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Pansy\ rug\ c.webp);
+    border-radius: 10px;
+  }
+  .overlay18 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/5\ hearts\ rug\ a.webp);
+    border-radius: 10px;
+  }
+  .overlay19 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/some\ flowers\ rug\ c.webp);
+    border-radius: 10px;
+  }
+  .overlay20 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/other\ 2.webp);
+    border-radius: 10px;
+  }
+  .overlay21 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Untitled1.png);
+    border-radius: 10px;
+  }
+  .overlay22 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Untitled2.png);
+    border-radius: 10px;
+  }
+  .overlay23 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Untitled4.png);
+    border-radius: 10px;
+  }
+  .overlay24 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Lily\(s\).Oblivion.Tranquillity\(2023\).png);
+    border-radius: 10px;
+  }
+  .overlay25 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/Lilies\ and\ the\ moon\(s\)\,\ blue\ and\ pink\ \(2023\).png);
+    border-radius: 10px;
+  }
+  .overlay26 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(Collections/nemo1.png);
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+.collections-1, .collections-2, .collections-3, .collections-4, .collections-5{
+  justify-content: space-between;
+  margin-top: 100px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+  flex: 0 1 auto;
+}
+
+
+
+
+---* COLORS AND WONDERLAND *---
+.color-and-wonderland-2021-flow:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.color-and-wonderland-2021-flow:hover .overlay1 {
+    opacity: 1;
+  }
+.color-and-wonderland-2021-reverie:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.color-and-wonderland-2021-reverie:hover .overlay2{
+    opacity: 1;
+}
+.color-and-wonderland-2021-shine:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.color-and-wonderland-2021-shine:hover .overlay3{
+    opacity: 1;
+}
+.color-and-wonderland-2021-space:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.color-and-wonderland-2021-space:hover .overlay4{
+    opacity: 1;
+}
+.color-and-wonderland-2021-flow{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Flow\ \(Colors\ and\ Wonderland\).webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+}  
+.color-and-wonderland-2021-reverie{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Reverie\ \(Colors\ and\ Wonderland\).webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+}
+.color-and-wonderland-2021-shine{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Shine\ \(Colors\ and\ Wonderland\).png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+}
+.color-and-wonderland-2021-space{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Space\ \(Colors\ and\ Wonderland\).webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+}
+
+
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .color-and-wonderland-2021-flow{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .color-and-wonderland-2021-reverie{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .color-and-wonderland-2021-shine{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .color-and-wonderland-2021-space{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    
+}    
+
+
+
+
+
+
+
+
+---* DIGITAL COLLAGES *---
+.digital-collages-2020-audrey:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.digital-collages-2020-audrey:hover .overlay5{
+    opacity: 1;
+}
+.digital-collages-2020-diving:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.digital-collages-2020-diving:hover .overlay6{
+    opacity: 1;
+}
+.digital-collages-2020-blooming-love:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.digital-collages-2020-blooming-love:hover .overlay7{
+    opacity: 1;
+}
+.digital-collages-2020-alice-in-my-wonderland:hover{
+        box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+        transform: scale(1.03);
+
+    }
+.digital-collages-2020-alice-in-my-wonderland:hover .overlay8{
+        opacity: 1;
+    }
+.digital-collages-2020-audrey{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Audrey.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    width: 300px; 
+    height: 350px; 
+  
+}
+.digital-collages-2020-diving{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Diving.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+    height: 350px; 
+
+}
+.digital-collages-2020-blooming-love{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Blooming\ love.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;  
+    height: 350px; 
+}
+.digital-collages-2020-alice-in-my-wonderland{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Alice\ in\ my\ wonderland.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 300px;   
+    height: 350px; 
+}
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .digital-collages-2020-audrey{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .digital-collages-2020-diving{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .digital-collages-2020-blooming-love{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .digital-collages-2020-alice-in-my-wonderland{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    
+}    
+
+---* COLORS AND WONDERLAND II *---
+.color-and-wonderland-ii-eternity:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+    
+}
+.color-and-wonderland-ii-eternity:hover .overlay9{
+    opacity: 1;
+}
+.color-and-wonderland-ii-little-wonderland:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.color-and-wonderland-ii-little-wonderland:hover .overlay10{
+    opacity: 1;
+}
+.color-and-wonderland-ii-monets-chrysanthemum:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.color-and-wonderland-ii-monets-chrysanthemum:hover .overlay11{
+    opacity: 1;
+}
+.color-and-wonderland-ii-halcycon:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.color-and-wonderland-ii-halcycon:hover .overlay12{
+    opacity: 1;
+}
+.color-and-wonderland-ii-the-unseen-beauty:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.color-and-wonderland-ii-the-unseen-beauty:hover .overlay13{
+    opacity: 1;
+}
+.color-and-wonderland-ii-eternity{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Eternity.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 250px;  
+    height: 350px;
+}
+.color-and-wonderland-ii-little-wonderland{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Little\ Wonderland.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 250px;  
+    height: 350px;
+
+}
+.color-and-wonderland-ii-monets-chrysanthemum{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Monets\ Chrysanthemums.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 250px;  
+    height: 350px;
+
+}
+.color-and-wonderland-ii-halcycon{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Halcyon.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 250px;  
+    height: 350px;
+
+}
+.color-and-wonderland-ii-the-unseen-beauty{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/The\ unseen\ beauty.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 250px; 
+    height: 350px;
+ 
+}
+
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .color-and-wonderland-ii-eternity{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .color-and-wonderland-ii-little-wonderland{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .color-and-wonderland-ii-monets-chrysanthemum{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+
+    }
+    .color-and-wonderland-ii-halcycon{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .color-and-wonderland-ii-the-unseen-beauty{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    
+}    
+
+
+
+
+
+
+
+
+---* BLACK AND WHITE *--- 
+.blacknwhite-circles-and-peonies:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.blacknwhite-circles-and-peonies:hover .overlay14{
+    opacity: 1;
+}
+.blacknwhite-lilies:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.blacknwhite-lilies:hover .overlay15{
+    opacity: 1;
+}
+.blacknwhite-dads-koi-fish-with-flowers:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.blacknwhite-dads-koi-fish-with-flowers:hover .overlay16{
+    opacity: 1;
+}
+.blacknwhite-circles-and-peonies{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Circles\ and\ Peones\ bnw.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 350px; 
+}
+.blacknwhite-lilies{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Lillies\ bnw.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 350px; 
+}
+.blacknwhite-dads-koi-fish-with-flowers{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Dads\ Koi\ fishes\ bnw.webp);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 350px; 
+}
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .blacknwhite-circles-and-peonies{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .blacknwhite-lilies{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .blacknwhite-dads-koi-fish-with-flowers{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+
+    }
+}    
+
+
+---* PUNCH NEEDLE *--- 
+.rug{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    max-width: 80%;
+    padding-top: 100px;
+}
+.rug h2{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.rug1{
+    justify-content: space-between;
+    margin-top: 5%;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    flex-direction:column;
+}
+.layer1:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.layer1:hover .overlay17{
+    opacity: 1;
+}
+.layer1{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Pansy\ rug\ b.webp);
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 50%;
+}
+.layer2:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.layer2:hover .overlay18{
+    opacity: 1;
+}
+.layer2{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/5\ hearts\ rug.webp);
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 50%;
+
+}
+.layer3:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.layer3:hover .overlay19{
+    opacity: 1;
+}
+.layer3{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/some\ flowers\ rug\ a.webp);
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 50%;
+
+}
+.layer4:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+
+}
+.layer4:hover .overlay20{
+    opacity: 1;
+}
+.layer4{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/other\ 1.webp);
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 50%;   
+
+}
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .layer1{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .layer2{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    .layer3{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .layer4{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+
+    }
+} 
+
+
+
+
+
+---*---
+.untitled1:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+    
+}
+.untitled1:hover .overlay21{
+    opacity: 1;
+}
+.untitled2:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.untitled2:hover .overlay22{
+    opacity: 1;
+}
+.untitled4:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.untitled4:hover .overlay23{
+    opacity: 1;
+}
+.lot:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.lot:hover .overlay24{
+    opacity: 1;
+}
+.lilymoon:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.lilymoon:hover .overlay25{
+    opacity: 1;
+}
+.nemo1:hover{
+    box-shadow: 0 0 20px 0px rgba(223, 118, 118, 0.7);
+    transform: scale(1.03);
+}
+.nemo1:hover .overlay25{
+    opacity: 1;
+}
+.untitled1{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Untitled1.png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+.untitled2{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Untitled2.png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+.untitled4{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Untitled4.png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+.lot{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Lily\(s\).Oblivion.Tranquillity\(2023\).png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+.lilymoon{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/Lilies\ and\ the\ moon\(s\)\,\ blue\ and\ pink\ \(2023\).png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+.nemo1{
+    background-image: linear-gradient(rgba(120, 119, 119, 0.7),rgba(120, 119, 119, 0.7)), url(Collections/nemo1.png);
+    padding: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    height: 500px; 
+}
+
+
+@media(max-width: 700px){
+    .collections-1{
+        flex-direction: column;
+    }   
+    .untitled1, .untitled2, .untitled4, .lot, .lilymoon, .nemo1{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }  
+    
+}    
+
+
+
+
+
+---* STUDIO *---
+.studio{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+
+}
+.studio-scroll{
+    width: 100%;
+    height: 500px;
+    gap: 2px;
+    padding-block: 1 rem;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+
+}
+.studio img{
+    scroll-snap-align: start;
+}
+
+
+
+
+
+
+
+
+.subheader1{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Lillies\ No.3.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.subheader1 p{
+    text-align: left;
+    padding: 2px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #de564d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav-link ul{
+        padding: 30px;
+    }
+}
+
+
+---* SUBPAGES01 *--- 
+.subheader2{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Diving.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+
+.subheader3{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Diving.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+
+.subheader4{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Eternity.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+
+.subheader5{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Dads\ Koi\ fishes\ with\ flowers\ banner.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+.subheader6{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Pansy\ rug\ c.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+
+.text-box2, .text-box3, .text-box4, .text-box5, .subheader6{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.commentbox{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.commentbox h3{
+    text-align: left;
+    color: #3c3c3c;
+}
+.commentform input, commentform textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+}
+.commentform button{
+    margin: 10px 0;
+}
+@media(max-width:700px){
+    .subheader h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.subheader7{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Collections/Lillies\ No.3.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.text-box7{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.contactcol h5{
+    color: #fff;
+}
+.contactcol div.fa{
+    font-size: 28px;
+    color: #fff;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contactcol div p{
+    padding: 0;
+}
+.contactcol div h5{
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.contactcol input, .contactcol textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.indi{
+    width:100%;
+    height:100vh;
+    background-image: url(background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    display: inline-flex;
+    gap: 2px;
+    align-items: center;
+    flex-direction: row;
+    flex: 0 1 auto;
+}
+
+.art{
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 40%;  
+}
+.des{
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 41%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+    width: 60%;  
+}
+.art img{
+    width: 400px;
+    height: auto;
+}
+.des p, .des h4{
+    color: #000000;
+}
+
+       
